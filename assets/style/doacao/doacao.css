@@ -1,0 +1,85 @@
+.doacao {
+  background-color: #F7C7B9;
+}
+
+.doacao__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.doacao__imagem {
+  background: url(../../img/maospresente.svg) center/cover no-repeat;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+
+.doacao__conteudo h2 {
+  color: #161212;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+}
+.doacao__conteudo p {
+  color: #404040;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px 0 32px 0;
+}
+.doacao__conteudo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: #F9F9F9;
+  background-color: #DA2535;
+  border-radius: 8px;
+  padding: 12px 32px;
+  text-decoration: none;
+  width: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .doacao__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .doacao__container {
+    text-align: center;
+  }
+  .doacao__conteudo h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .doacao__conteudo p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .doacao__conteudo a {
+    width: auto;
+  }
+  .doacao__imagem {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .doacao__conteudo br {
+    display: none;
+  }
+  .doacao__imagem {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .doacao__imagem {
+    width: 200px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=doacao.css.map */

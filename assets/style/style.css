@@ -1,0 +1,21 @@
+@import './cabecalho/cabecalho.css';
+@import './apresentacao/apresentacao.css';
+@import './acessorios/acessorios.css';
+@import './doacao/doacao.css';
+@import './rodape/rodape.css';
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1214px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 1.5rem 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

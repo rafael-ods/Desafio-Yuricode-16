@@ -1,0 +1,102 @@
+@import '../variable/variable';
+
+.cabecalho {
+    background-color: $rosa;
+}
+
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1214px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.cabecalho__logo {
+    color: $preto;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    background: url(../../img/logo.svg) left / contain no-repeat;
+
+    text-decoration: none;
+    padding-left: 45px;
+    width: 150px;
+    height: 39px;
+}
+
+.cabecalho__menu-hamburguer {
+    display: none;
+}
+
+.menu__lista {
+    display: flex;
+    align-items: center;
+    column-gap: 51px;
+
+    .menu__link {
+        color: $preto;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho__logo {
+        font-size: 14px;
+        line-height: 21px;
+        width: 73px;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: block;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        color: $preto;
+        font-size: 26px;
+        
+    }
+
+    .menu__lista {
+        display: block;
+        background-color: $rosa;
+        
+        position: absolute;
+        right: 0;
+        top: 104px;
+
+        width: 100%;
+        height: 0;
+
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+    .menu .active {
+        height: calc(100vh - 103px) ;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    .menu__item {
+        margin: 0 25px;
+        border-bottom: 2px solid $preto;
+        .menu__link {
+            color: $preto;
+            padding: 1rem 0;
+            display: inline-block;
+        }
+    }
+
+    
+}

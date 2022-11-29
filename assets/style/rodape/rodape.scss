@@ -1,0 +1,95 @@
+@import '../variable/variable';
+
+.rodape {
+    background-color: $branco;
+}
+
+.rodape__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >a {
+        color: $preto;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        background: url(../../img/logo.svg) left / contain no-repeat;
+
+        text-decoration: none;
+        padding-left: 45px;
+        width: 150px;
+        height: 39px
+    }
+}
+
+.rodape__lista {
+    display: flex;
+    align-items: center;
+    column-gap: 51px;
+    margin: 20px 0;
+
+
+    .twitter {
+        background: url('../../img/Group\ 34094.svg') center / cover no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .youtube {
+        background: url('../../img/Group\ 34095.svg') center / cover no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .linkedin {
+        background: url('../../img/Group\ 34096.svg') center / cover no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .instagram {
+        background: url('../../img/Group\ 34097.svg') center / cover no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .facebook {
+        background: url('../../img/Group\ 34098.svg') center / cover no-repeat;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .rodape__container {
+        justify-content: center;
+
+        >a {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    .rodape__lista {
+        column-gap: 25px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .rodape__lista {
+        column-gap: 10px;
+    }
+
+}
